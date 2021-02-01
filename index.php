@@ -24,6 +24,9 @@
 		padding: .7em 1.5em; 
 		outline: none; 
 	}
+	a{
+		color:#fff;
+	}
 } 
 </style>
 </head>
@@ -36,16 +39,30 @@
 		</td>
 	</tr>
 	<tr height = 90% width = 100% valign="top">
-		<td width = 350px>
-		<form name=symbol action=symbol.php method=POST ></br>
-			<input type="submit" name"Symbol" value="Символика"class="knopka"/>
-		</form>
-		<form name=zodiac action=zodiac.php method=POST ></br>
-			<input type="submit" name"Zodiac" value="Тайная вечеря как представление знаков зодиака" class="knopka"/>
-		</form>
-		<form name=secret action=secret.php method=POST ></br>
-			<input type="submit" name"Secret" value="Интересные факты" class="knopka"/>
-		</form>
+		<td width = 350px class="smalltext">
+		<table  height=300px bgcolor=#75675e width = 350px border="2" style="border-color:#fff">
+		<tr height=100px bgcolor=#75675e >
+		<td>
+		<?php
+		echo "<a href = \"symbol.php\"> Символика </a>";
+		?></br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<?php
+		echo "<a href = \"zodiac.php\"> Тайная вечеря как представление знаков зодиака </a>";
+		?></br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<?php
+		echo "<a href = \"secret.php\"> Интересные факты </a>";
+		?>
+		</td>
+		</tr>
+		</table>
 		</td>
 		<td width = 750p>
 			<div>
